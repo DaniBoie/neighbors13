@@ -5,8 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Hello there!</h1>
+  <div style="padding: 10%;">
+    <h1 id="body">Hello again from the downstairs neighbors!</h1>
+    <h3 id="test">Good luck to you all today (09/23/21) as well. If you all are free this day at 7:30pm they are showing Shrek at Aldrich park, we are maybe going but if you're down we are too 👍.</h3>
+    <h4>If not let us know what works best for y'all. :)</h4>
+    <h6 style="text-align: right; margin-bottom: 0;">- Jonny trippin' fr</h6>
+    <h6 style="text-align: right; margin-top: 0;"> 2021 </h6>
+    <img src="http://images.firstpost.com/wp-content/uploads/2014/02/shrek_380.gif?impolicy=website&width=1200&height=800" alt="Divine Being" style="max-width: 100%;">
+  </div>
+  <script>
+    document.getElementById("body").addEventListener('click', () => {
+      console.log('YESYES YES !')
+      if (document.getElementById("test").style.color == "magenta") {
+        document.getElementById("test").style.color = "white"
+        console.log('did')
+      } else {
+        console.log('it')
+        document.getElementById("test").style.color = "magenta"
+      }
+      
+    })
+  </script>
 </body>
 </html>
